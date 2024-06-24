@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.javafx.OrderController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0">
+        <items>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="customerId"  />
+                  <Button mnemonicParsing="false" onAction="#checkCustomerDetail" text="Send Request">
+                     <VBox.margin>
+                        <Insets bottom="40.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+
+                   <Label fx:id="responseLabel"  prefWidth="200.0" wrapText="true" >  </Label>
+
+                   <Button mnemonicParsing="false" fx:id="downloadButton" onAction="#downloadInvoice" visible="false" text="Download inovice">
+
+                       <VBox.margin>
+                           <Insets bottom="40.0" top="10.0" />
+                       </VBox.margin>
+                   </Button>
+               </children>
+            </VBox>
+<!--            <VBox prefHeight="200.0" prefWidth="100.0">-->
+<!--               <children>-->
+<!--                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="298.0" text="Update" onAction="#updateList" />-->
+<!--                  <ListView prefHeight="372.0" prefWidth="297.0" fx:id="orderList" />-->
+<!--               </children>-->
+<!--            </VBox>-->
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
